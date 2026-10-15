@@ -2,9 +2,8 @@ button {
     display: inline-block;
     transition-duration: 0.4s;
     border-radius: 12px;
-    background-color: #f70101;
-    border: none;
-    color: white;
+    background-color: #b70202;
+    color: rgb(10, 2, 2);
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
@@ -12,6 +11,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     font: 100% courier new;
+    border: 2px solid #2a0000;
 }
 
 button:hover {
@@ -29,9 +29,87 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to right, #ca4502, #f70101);
+    background-image: linear-gradient(to top, #000000, #b70202);
     font-family: bold courier new;
+    border-top: 2px solid #2a0000;
+    border-left: 2px solid #2a0000;
+    border-right: 2px solid #2a0000;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #b70202;
+    border-bottom: 2px solid #2a0000;
+    border-left: 2px solid #2a0000;
+    border-right: 2px solid #2a0000;    
+}
+.avoid_footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+}
+button.logo-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+button.nav-button {
+   display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    background-color: #b70202;
+    color: rgb(10, 2, 2);
+    padding: 5px 10px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font: 100% courier new;
+    border: 2px solid #2a0000;
+    margin-left: auto;
+    
+}
+button.nav-button:hover {
+    background-color: #400202;
+    color: rgb(250, 249, 249);
+}
+.company-banner {
+width: 500px; 
+}
+.fill-width-image {
+width: 100%;
+height: auto; 
+object-fit: cover; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: linear-gradient(to top, #000000, #b70202);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left :auto;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.background-image {
+    background-image: url('FieryTireTracksonAsphalt.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    width: auto;
+    text-align: center;
+    text-align: middle;
+    color: white;
 }
